@@ -1,2 +1,2 @@
 # Victor-Wu
-An Interactive to Get to Know Me Better
+An Interactive Website to Get to Know Me Better
