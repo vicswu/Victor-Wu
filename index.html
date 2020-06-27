@@ -3,24 +3,216 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Personal Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Victor Wu</title>
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="main.css">
 </head>
 
 <body>
-    <nav>
-        <div class="logo">
-            <h4>The Nav</h4>
+    <header>
+        <div class="menu-toggler">
+            <div class="bar half start"></div>
+            <div class="bar"></div>
+            <div class="bar half end"></div>
         </div>
-        <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Work</a></li>
-            <li><a href="#">Project</a></li>
-            <li><a href="#">Contact</a></li>
-        </ul>
-    </nav>
+        <nav class="top-nav">
+            <ul class="nav-list">
+                <li>
+                    <a href="index.html" class="nav-link">Home</a>
+                </li>
+                <li>
+                    <a href="#about" class="nav-link">About</a>
+                </li>
+                <li>
+                    <a href="#services" class="nav-link">Services</a>
+                </li>
+                <li>
+                    <a href="#portfolio" class="nav-link">Portfolio</a>
+                </li>
+                <li>
+                    <a href="#experience" class="nav-link">Experience</a>
+                </li>
+                <li>
+                    <a href="#contact" class="nav-link">Contact</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="landing-text">
+            <h1>Victor Wu</h1>
+            <h6>UI | UX Designer</h6>
+        </div>
+    </header>
+
+    <section class="about" id="id">
+        <div class="container">
+            <div class="profile-img">
+                <img src="images/profile.JPG" alt="">
+            </div>
+            <div class="about-details">
+                <div class="about-heading">
+                    <h1>About</h1>
+                    <h6>Myself</h6>
+                </div>
+                <p>Hello My name is Victor and I am an avid coder!</p>
+            </div>
+            <div class="social-media">
+                <ul class="nav-list">
+                    <li>
+                        <a href="#" class="icon-link">
+                            <i class="fab fa-facebook-square"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="icon-link">
+                            <i class="fab fa-twitter-square"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="icon-link">
+                            <i class="fab fa-dribbble-square"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section class="services" id="services">
+        <div class="container">
+            <div class="section-heading">
+                <h1>Services</h1>
+                <h6>What I can do for you</h6>
+            </div>
+            <div class="my-skills">
+                <div class="skill">
+                    <div class="icon-container">
+                        <i class="fas fa-layer-group"></i>
+                    </div>
+                    <h1>Web Design</h1>
+                    <p>Description</p>
+                </div>
+                <div class="skill">
+                    <div class="icon-container">
+                        <i class="fas fa-code-group"></i>
+                    </div>
+                    <h1>Web Development</h1>
+                    <p>Description</p>
+                </div>
+                <div class="skill">
+                    <div class="icon-container">
+                        <i class="fas fa-chart-group"></i>
+                    </div>
+                    <h1>Product Strategy</h1>
+                    <p>Description</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="portfolio" id="portfolio">
+        <div class="container">
+            <div class="section-heading">
+                <h1>Portfolio</h1>
+                <h6>Some of my recent work</h6>
+            </div>
+            <div class="portfolio-item">
+                <div class="portfolio-img">
+                    <img src="images/portitem1.png" alt="">
+                </div>
+                <div class="portfolio-description">
+                    <h6>Web Development</h6>
+                    <h1>Blog Website</h1>
+                    <p>Brief description</p>
+                    <a href="#" class="cta">View Details</a>
+                </div>
+            </div>
+            <div class="portfolio-item">
+                <div class="portfolio-description">
+                    <h6>Web Design</h6>
+                    <h1>Layout</h1>
+                    <p>Brief description</p>
+                    <a href="#" class="cta">View Details</a>
+                </div>
+                <div class="portfolio-img">
+                    <img src="images/portitem1.png" alt="">
+                </div>
+            </div>
+            <div class="portfolio-item">
+                <div class="portfolio-img">
+                    <img src="images/portitem1.png" alt="">
+                </div>
+                <div class="portfolio-description">
+                    <h6>Web Design</h6>
+                    <h1>Product Sketch</h1>
+                    <p>Brief description</p>
+                    <a href="#" class="cta">View Details</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="experience" id="experience">
+        <div class="container">
+            <div class="section-heading">
+                <h1>Work Experience</h1>
+                <h6>Past and current jobs</h6>
+            </div>
+            <div class="timeline">
+                <ul>
+                    <li class="date" data-date="2011 - Present">
+                        <h1>Google</h1>
+                        <p>Software Developer</p>
+                    </li>
+                    <li class="date" data-date="2008 - 2011">
+                        <h1>Facebook</h1>
+                        <p>Software Developer</p>
+                    </li>
+                    <li class="date" data-date="2002 - 2007">
+                        <h1>Microsoft</h1>
+                        <p>Software Developer</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="section-heading">
+                <h1>Contact</h1>
+                <h6>Reach me at the following links!</h6>
+            </div>
+            <form action="">
+                <label for="name">Name:</label>
+                <input type="text" name="name" id="name" placeholder="Enter your name..." required>
+                <label for="email">Email:</label>
+                <input type="email" name="email" id="email" placeholder="Enter your email..." required>
+                <label for="service">Services:</label>
+                <select name="service" id="service">
+                    <option value="">Web Design</option>
+                    <option value="">Web Development</option>
+                    <option value="">Web Design/Development</option>
+                </select>
+                <label for="subject">Subject:</label>
+                <textarea name="subject" id="subject" cols="10" rows="10"></textarea>
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+    </section>
+
+    <footer class="copyright">
+        <div class="up" id="up">
+            <i class="fas fa-chevron-up"></i>
+            <p>&copy; 2020 Victor Wu</p>
+        </div>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="main.js"></script>
 </body>
 
 </html>
