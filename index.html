@@ -14,6 +14,7 @@
 </head>
 
 <body>
+    <div class="cursor"></div>
     <header>
         <div class="menu-toggler">
             <div class="bar half start"></div>
@@ -48,10 +49,19 @@
         </div>
     </header>
 
+    <nav id="navbar">
+        <a class="link" href="index.html">Home</a>
+        <a class="link" href="#about">About</a>
+        <a class="link" href="#skills">Skills</a>
+        <a class="link" href="#portfolio">Portfolio</a>
+        <a class="link" href="#education">Education</a>
+        <a class="link" href="#experience">Experience</a>
+    </nav>
+
     <section class="about" id="about">
         <div class="container">
             <div class="profile-img" data-aos="fade-right" data-aos-delay="150">
-                <img src="images/profile3.jpg" alt="">
+                <img src="images/profile3.jpg" alt="" style="z-index: 1">
             </div>
             <div class="about-details" data-aos="fade-left" data-aos-delay="300">
                 <div class="about-heading">
@@ -218,8 +228,8 @@
         <div class="up" id="up">
             <i class="fas fa-chevron-up"></i>
         </div>
-        <p>Made using Javascript, CSS, HTML, AOS and Font Awesome.</p>
-        <p>Victor Wu &copy; 2020</p>
+        <p class="footer">Made using Javascript, CSS, HTML, AOS and Font Awesome.</p>
+        <p class="footer">Victor Wu &copy; 2020</p>
     </footer>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>

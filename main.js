@@ -27,3 +27,22 @@ $(document).ready(function() {
         once: true
     });
 });
+
+window.onscroll = function() { scrollFunction() };
+
+function scrollFunction() {
+    if (document.body.scrollTop > 775 || document.documentElement.scrollTop > 775) {
+        document.getElementById("navbar").style.top = "0";
+    } else {
+        document.getElementById("navbar").style.top = "-70px";
+    }
+}
+
+let mouseCursor = document.querySelector('.cursor');
+
+window.addEventListener('mousemove', cursor);
+
+function cursor(e) {
+    mouseCursor.style.top = e.pageY + 'px';
+    mouseCursor.style.left = e.pageX + 'px';
+}
