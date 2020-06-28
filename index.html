@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Victor Wu</title>
     <link href="https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Notable&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <link rel="stylesheet" href="main.css">
@@ -48,34 +49,34 @@
 
     <section class="about" id="id">
         <div class="container">
-            <div class="profile-img">
+            <div class="profile-img" data-aos="fade-right" data-aos-delay="150">
                 <img src="images/profile.JPG" alt="">
             </div>
-            <div class="about-details">
+            <div class="about-details" data-aos="fade-left" data-aos-delay="300">
                 <div class="about-heading">
                     <h1>About</h1>
                     <h6>Myself</h6>
                 </div>
                 <p>Hello My name is Victor and I am an avid coder!</p>
-            </div>
-            <div class="social-media">
-                <ul class="nav-list">
-                    <li>
-                        <a href="#" class="icon-link">
-                            <i class="fab fa-facebook-square"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#" class="icon-link">
-                            <i class="fab fa-twitter-square"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#" class="icon-link">
-                            <i class="fab fa-dribbble-square"></i>
-                        </a>
-                    </li>
-                </ul>
+                <div class="social-media">
+                    <ul class="nav-list">
+                        <li>
+                            <a href="#" class="icon-link">
+                                <i class="fab fa-github-square"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="icon-link">
+                                <i class="fab fa-twitter-square"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="icon-link">
+                                <i class="fab fa-dribbble-square"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </div>
     </section>
@@ -87,23 +88,23 @@
                 <h6>What I can do for you</h6>
             </div>
             <div class="my-skills">
-                <div class="skill">
+                <div class="skill" data-aos="fade-in" data-aos-delay="150">
                     <div class="icon-container">
                         <i class="fas fa-layer-group"></i>
                     </div>
                     <h1>Web Design</h1>
                     <p>Description</p>
                 </div>
-                <div class="skill">
+                <div class="skill" data-aos="fade-in" data-aos-delay="300">
                     <div class="icon-container">
-                        <i class="fas fa-code-group"></i>
+                        <i class="fas fa-code"></i>
                     </div>
                     <h1>Web Development</h1>
                     <p>Description</p>
                 </div>
-                <div class="skill">
+                <div class="skill" data-aos="fade-in" data-aos-delay="450">
                     <div class="icon-container">
-                        <i class="fas fa-chart-group"></i>
+                        <i class="fas fa-chart-bar"></i>
                     </div>
                     <h1>Product Strategy</h1>
                     <p>Description</p>
@@ -119,10 +120,10 @@
                 <h6>Some of my recent work</h6>
             </div>
             <div class="portfolio-item">
-                <div class="portfolio-img">
+                <div class="portfolio-img has-margin-right" data-aos="fade-right" data-aos-delay="150">
                     <img src="images/portitem1.png" alt="">
                 </div>
-                <div class="portfolio-description">
+                <div class="portfolio-description" data-aos="fade-left" data-aos-delay="300">
                     <h6>Web Development</h6>
                     <h1>Blog Website</h1>
                     <p>Brief description</p>
@@ -130,21 +131,21 @@
                 </div>
             </div>
             <div class="portfolio-item">
-                <div class="portfolio-description">
+                <div class="portfolio-description has-margin-right" data-aos="fade-right" data-aos-delay="150">
                     <h6>Web Design</h6>
                     <h1>Layout</h1>
                     <p>Brief description</p>
                     <a href="#" class="cta">View Details</a>
                 </div>
-                <div class="portfolio-img">
+                <div class="portfolio-img" data-aos="fade-left" data-aos-delay="300">
                     <img src="images/portitem1.png" alt="">
                 </div>
             </div>
-            <div class="portfolio-item">
-                <div class="portfolio-img">
+            <div class="portfolio-item" data-aos="fade-right" data-aos-delay="150">
+                <div class="portfolio-img has-margin-right">
                     <img src="images/portitem1.png" alt="">
                 </div>
-                <div class="portfolio-description">
+                <div class="portfolio-description" data-aos="fade-left" data-aos-delay="300">
                     <h6>Web Design</h6>
                     <h1>Product Sketch</h1>
                     <p>Brief description</p>
@@ -160,7 +161,7 @@
                 <h1>Work Experience</h1>
                 <h6>Past and current jobs</h6>
             </div>
-            <div class="timeline">
+            <div class="timeline" data-aos="fade-down" data-aos-delay="150">
                 <ul>
                     <li class="date" data-date="2011 - Present">
                         <h1>Google</h1>
@@ -185,7 +186,7 @@
                 <h1>Contact</h1>
                 <h6>Reach me at the following links!</h6>
             </div>
-            <form action="">
+            <form action="" data-aos="fade-up" data-aos-delay="150">
                 <label for="name">Name:</label>
                 <input type="text" name="name" id="name" placeholder="Enter your name..." required>
                 <label for="email">Email:</label>
@@ -206,8 +207,8 @@
     <footer class="copyright">
         <div class="up" id="up">
             <i class="fas fa-chevron-up"></i>
-            <p>&copy; 2020 Victor Wu</p>
         </div>
+        <p>&copy; 2020 Victor Wu</p>
     </footer>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
