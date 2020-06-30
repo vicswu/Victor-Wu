@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" id="html">
 
 <head>
     <meta charset="UTF-8">
@@ -15,6 +15,14 @@
 
 <body>
     <header>
+        <div>
+            <input type="checkbox" class="checkbox" id="chk" />
+            <label class="label" for="chk">
+                <i class="fas fa-moon"></i>
+                <i class="fas fa-sun"></i>
+                <div class="ball"></div>
+            </label>
+        </div>
         <div class="menu-toggler">
             <div class="bar half start"></div>
             <div class="bar"></div>
@@ -104,36 +112,59 @@
     <section class="services" id="skills">
         <div class="container">
             <div class="section-heading">
-                <h1>Skills</h1>
+                <h1 id="h1skills">Skills</h1>
             </div>
             <div class="my-skills">
                 <div class="skill" data-aos="fade-in" data-aos-delay="150">
-                    <div class="icon-container">
+                    <div class="icon-container" id="icon-container1">
                         <i class="fab fa-js-square"></i>
                     </div>
                     <h1>Javascript</h1>
-                    <p>Description</p>
+                    <p></p>
                 </div>
                 <div class="skill" data-aos="fade-in" data-aos-delay="300">
-                    <div class="icon-container">
+                    <div class="icon-container" id="icon-container2">
                         <i class="fab fa-react"></i>
                     </div>
                     <h1>React</h1>
-                    <p>Description</p>
+                    <p></p>
                 </div>
                 <div class="skill" data-aos="fade-in" data-aos-delay="450">
-                    <div class="icon-container">
+                    <div class="icon-container" id="icon-container3">
                         <i class="fab fa-python"></i>
                     </div>
                     <h1>Python</h1>
-                    <p>Description</p>
+                    <p></p>
                 </div>
+            </div>
+            <div class="my-skills">
                 <div class="skill" data-aos="fade-in" data-aos-delay="600">
-                    <div class="icon-container">
+                    <div class="icon-container" id="icon-container4">
                         <i class="fas fa-mobile-alt"></i>
                     </div>
                     <h1>Swift</h1>
-                    <p>Description</p>
+                    <p></p>
+                </div>
+                <div class="skill" data-aos="fade-in" data-aos-delay="300">
+                    <div class="icon-container" id="icon-container5">
+                        <i class="fab fa-git-square"></i>
+                    </div>
+                    <h1>Git</h1>
+                    <p></p>
+                </div>
+                <div class="skill" data-aos="fade-in" data-aos-delay="450">
+                    <div class="icon-container" id="icon-container6">
+                        <i class="fab fa-node"></i>
+                    </div>
+                    <h1>Node</h1>
+                    <p></p>
+                </div>
+                <div class="skill" data-aos="fade-in" data-aos-delay="600">
+                    <div class="icon-container" id="icon-container7">
+                        <i class="fas fa-database"></i>
+                    </div>
+                    <h1>Firebase</h1>
+                    <p></p>
                 </div>
             </div>
         </div>
@@ -142,7 +173,7 @@
     <section class="portfolio" id="portfolio">
         <div class="container">
             <div class="section-heading">
-                <h1>Portfolio</h1>
+                <h1 id="h1portfolio">Portfolio</h1>
                 <h6>Check out some of my recent projects!</h6>
             </div>
             <div class="portfolio-item">
@@ -187,7 +218,7 @@
     <section class="experience" id="education">
         <div class="container">
             <div class="section-heading">
-                <h1>Education</h1>
+                <h1 id="h1education">Education</h1>
             </div>
             <div class="timeline" data-aos="fade-down" data-aos-delay="150">
                 <ul>
@@ -211,7 +242,7 @@
     <section class="experience" id="experience">
         <div class="container">
             <div class="section-heading">
-                <h1>Work Experience</h1>
+                <h1 id="h1experience">Work Experience</h1>
             </div>
             <div class="timeline" data-aos="fade-down" data-aos-delay="150">
                 <ul>

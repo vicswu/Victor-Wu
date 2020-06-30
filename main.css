@@ -6,17 +6,25 @@
             box-sizing: border-box;
         }
         
-        html {
+        #html {
             font-size: 10px;
             font-family: 'Titillium Web', sans-serif;
             color: black;
             background-color: black;
         }
         
+        #html.dark {
+            color: #fffff0;
+        }
+        
         body {
             width: 100%;
             height: 100%;
-            background-color: #fffff0;
+            background: #fffff0;
+        }
+        
+        body.dark {
+            background: #292C35;
         }
         
         section {
@@ -62,6 +70,10 @@
             margin-bottom: 1rem;
         }
         
+        h1.dark {
+            color: #fffff0;
+        }
+        
         .section-heading h1::before,
         .section-heading h1::after {
             content: '';
@@ -102,6 +114,52 @@
             height: 100vh;
             background: url("images/japan.JPG");
             background-size: cover;
+        }
+        
+        .checkbox {
+            opacity: 0;
+            position: absolute;
+        }
+        
+        .label {
+            background-color: #fffff0;
+            border-radius: 50px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            z-index: 1500;
+            justify-content: space-between;
+            padding: 5px;
+            position: absolute;
+            top: 5rem;
+            right: 92%;
+            height: 26px;
+            width: 50px;
+            transform: scale(1.5);
+        }
+        
+        .label .ball {
+            background-color: black;
+            border-radius: 50%;
+            position: absolute;
+            top: 2px;
+            left: 2px;
+            height: 22px;
+            width: 22px;
+            transform: translateX(0px);
+            transition: transform 0.2s linear;
+        }
+        
+        .checkbox:checked+.label .ball {
+            transform: translateX(24px);
+        }
+        
+        .fa-moon {
+            color: #f1c40f;
+        }
+        
+        .fa-sun {
+            color: #f39c12;
         }
         
         .top-nav {
@@ -374,6 +432,11 @@
             margin-bottom: 2rem;
             display: flex;
             transform: rotate(45deg);
+        }
+        
+        .icon-container.dark {
+            border: 3px solid #3883ff;
+            background-color: #64b3f4;
         }
         
         .icon-container i {
