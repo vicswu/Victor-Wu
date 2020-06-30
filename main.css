@@ -424,7 +424,12 @@
         }
         
         .portfolio-description .cta:hover {
-            color: #2f67cd;
+            color: darkblue;
+        }
+        
+        .portfolio-description .cta {
+            margin: 5px;
+            display: grid;
         }
         /*End services*/
         /*Start timeline*/
