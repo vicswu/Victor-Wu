@@ -18,16 +18,16 @@
             background-color: #292C35;
         }
         
-        .element::-webkit-scrollbar {
-            width: 0 !important
+        .example::-webkit-scrollbar {
+            display: none;
         }
+        /* Hide scrollbar for IE, Edge and Firefox */
         
-        .element {
-            overflow: -moz-scrollbars-none;
-        }
-        
-        .element {
+        .example {
             -ms-overflow-style: none;
+            /* IE and Edge */
+            scrollbar-width: none;
+            /* Firefox */
         }
         
         body {
@@ -38,6 +38,15 @@
         
         body.dark {
             background: #292C35;
+            color: #fffff0;
+        }
+        
+        body.dark h4 {
+            color: #fffff0;
+        }
+        
+        body.dark h5 {
+            color: #fffff0;
         }
         
         section {
