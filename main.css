@@ -14,7 +14,7 @@
         }
         
         #html.dark {
-            color: #fffff0;
+            color: #fcfcfc;
             background-color: #292C35;
         }
         
@@ -33,20 +33,20 @@
         body {
             width: 100%;
             height: 100%;
-            background: #fffff0;
+            background: #fcfcfc;
         }
         
         body.dark {
             background: #292C35;
-            color: #fffff0;
+            color: #fcfcfc;
         }
         
         body.dark h4 {
-            color: #fffff0;
+            color: #fcfcfc;
         }
         
         body.dark h5 {
-            color: #fffff0;
+            color: #fcfcfc;
         }
         
         section {
@@ -116,7 +116,7 @@
         }
         
         h1.dark {
-            color: #fffff0;
+            color: #fcfcfc;
         }
         
         .section-heading h1::before,
@@ -150,7 +150,7 @@
             bottom: -.5rem;
             left: 50%;
             transform: translateX(-50%);
-            background-color: #fffff0;
+            background-color: #fcfcfc;
             opacity: 0.75;
         }
         
@@ -207,7 +207,7 @@
         }
         
         .label .ball {
-            background-color: #fffff0;
+            background-color: #fcfcfc;
             border-radius: 50%;
             position: absolute;
             top: 2px;
@@ -236,7 +236,7 @@
             position: fixed;
             top: -100vh;
             z-index: 50;
-            background-color: white;
+            background-color: #fcfcfc;
             border-bottom-right-radius: 100%;
             border-bottom-left-radius: 100%;
             transition: all 650ms cubic-bezier(1, 0, 0, 1);
@@ -360,7 +360,7 @@
             font-weight: 500;
             font-family: 'Titillium Web', sans-serif;
             font-size: 1.5rem;
-            background: linear-gradient(to right, #fd746c, #ff9068);
+            background: #5c5c5c;
             /* Black background color */
             position: fixed;
             /* Make it stick/fixed */
@@ -377,7 +377,7 @@
         #navbar a {
             float: right;
             display: block;
-            color: white;
+            color: #fcfcfc;
             text-align: center;
             padding: 15px;
             text-decoration: none;
@@ -385,7 +385,7 @@
         }
         
         #navbar a:hover {
-            background-color: #fffff0;
+            background-color: #fcfcfc;
             color: #00d2ff;
             z-index: 1500;
         }
@@ -530,27 +530,27 @@
         .icon-container {
             width: 7.5rem;
             height: 7.5rem;
-            border: 3px solid #fd746c;
-            background-color: #ff9068;
+            border: 3px solid #5e5e5e;
+            background-color: #747474;
             margin-bottom: 2rem;
             display: flex;
             transform: rotate(45deg);
         }
         
         .icon-container.dark {
-            border: 3px solid #3883ff;
-            background-color: #64b3f4;
+            border: 3px solid #fcfcfc;
+            background-color: #747474;
         }
         
         .icon-container i {
-            color: #fffff0;
+            color: #fcfcfc;
             font-size: 4rem;
             margin: auto;
             transform: rotate(-45deg);
         }
         
         .icon-container i.fa-html5 {
-            color: #fffff0;
+            color: #fcfcfc;
             font-size: 3rem;
             margin-left: 7.5px;
             margin-top: 20px;
@@ -558,7 +558,7 @@
         }
         
         .icon-container i.fa-css3-alt {
-            color: #fffff0;
+            color: #fcfcfc;
             font-size: 3rem;
             margin: auto;
             transform: rotate(-45deg);
@@ -673,12 +673,12 @@
         
         .timeline .date::after {
             content: '';
-            box-shadow: 0 0 0 4px coral;
+            box-shadow: 0 0 0 4px #5c5c5c;
             border-radius: 100%;
             left: -8rem;
             height: 1.5rem;
             width: 1.5rem;
-            background-color: white;
+            background-color: #fcfcfc;
         }
         /*End timeline*/
         /*Start footer*/
@@ -689,7 +689,7 @@
             background-color: black;
             padding: 2rem 0;
             position: relative;
-            color: #fffff0;
+            color: #fcfcfc;
         }
         
         .copyright p {
@@ -700,9 +700,10 @@
             position: absolute;
             height: 5rem;
             width: 5rem;
-            background-color: white;
+            background-color: #fcfcfc;
             top: -2.5rem;
             border-radius: 100%;
+            border: 1px solid black;
             right: 5rem;
             display: flex;
             animation: pulse 2s infinite;
@@ -826,7 +827,7 @@
                 font-weight: 500;
                 font-family: 'Titillium Web', sans-serif;
                 font-size: 1.2rem;
-                background: linear-gradient(to right, #fd746c, #ff9068);
+                background: #808080;
                 /* Black background color */
                 position: fixed;
                 /* Make it stick/fixed */
