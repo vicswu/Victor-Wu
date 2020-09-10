@@ -863,6 +863,7 @@
             }
             .section-heading h1 {
                 font-size: 3rem;
+                overflow: hidden;
             }
             .about .container {
                 flex-direction: column;
@@ -901,6 +902,12 @@
             .portfolio-description {
                 margin: 0;
                 order: 2;
+            }
+            .portfolio-description h1 {
+                font-size: 2rem;
+                font-weight: 300;
+                margin: 1rem 0;
+                overflow: hidden;
             }
             .timeline ul {
                 margin: 0 0 0 auto;
