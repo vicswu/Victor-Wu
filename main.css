@@ -727,7 +727,7 @@
         /*End animations*/
         /*Start media queries*/
         
-        @media screen and (max-width: 768px) {
+        @media screen and (max-width: 1000px) {
             .landing-text h1 {
                 font-size: 15rem;
             }
@@ -773,25 +773,123 @@
             }
         }
         
-        @media screen and (max-width: 600px) {
+        @media only screen and (device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) {
+            * {
+                overflow-x: hidden;
+            }
+            header {
+                width: 100%;
+                height: 100vh;
+                background: url("images/wallpaper2.jpg");
+                background-size: cover;
+            }
+            .landing-text {
+                position: absolute;
+                top: 30%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                width: 100%;
+                text-align: center;
+                z-index: 1;
+            }
+            .landing-text h1 {
+                font-size: 5rem;
+            }
+            span {
+                margin: 0.4em 0 10em 0;
+                font-size: 1em;
+                z-index: 100;
+            }
             .menu-toggler {
                 top: 2rem;
                 right: 2rem;
             }
-            .landing-text h1 {
-                font-size: 8rem;
+            .label {
+                border-radius: 50px;
+                cursor: pointer;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                padding: 5px;
+                position: absolute;
+                top: 3.5rem;
+                right: 80%;
+                height: 26px;
+                width: 50px;
+                transform: scale(1.5);
             }
-            .landing-text h6 {
-                font-size: 1.4rem;
+            #navbar {
+                font-weight: 500;
+                font-family: 'Titillium Web', sans-serif;
+                font-size: 1.2rem;
+                background: linear-gradient(to right, #fd746c, #ff9068);
+                /* Black background color */
+                position: fixed;
+                /* Make it stick/fixed */
+                top: -50px;
+                /* Hide the navbar 50 px outside of the top view */
+                width: 100%;
+                /* Full width */
+                transition: top 0.3s;
+                /* Transition effect when sliding down (and up) */
+                z-index: 1000;
+            }
+            /* Style the navbar links */
+            #navbar a {
+                float: right;
+                display: block;
+                color: white;
+                text-align: center;
+                padding: 10px;
+                text-decoration: none;
+                z-index: 1500;
+            }
+            #navbar a:hover {
+                background-color: #fffff0;
+                color: #00d2ff;
+                z-index: 1500;
+            }
+            .nav-list {
+                flex-direction: column;
+            }
+            li {
+                margin: 2rem 0;
             }
             .nav-link {
-                font-size: 3.5rem;
+                font-size: 4.5rem;
+            }
+            .about-heading h1 {
+                font-size: 8rem;
+            }
+            .section-heading h1 {
+                font-size: 3rem;
             }
             .about .container {
                 flex-direction: column;
             }
+            .about-details .nav-list {
+                flex-direction: initial;
+            }
+            .about-details li {
+                margin: 0 2rem;
+            }
             .profile-img {
                 margin: 0 0 7rem 0;
+                width: 35rem;
+            }
+            .icon-container {
+                width: 7rem;
+                height: 7rem;
+            }
+            .icon-container i {
+                font-size: 4rem;
+            }
+            .my-skills {
+                margin-top: 5rem;
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(7.5rem, 1fr));
+                grid-gap: 2.5rem;
+                text-align: center;
             }
             .portfolio-item {
                 flex-direction: column;
@@ -804,11 +902,14 @@
                 margin: 0;
                 order: 2;
             }
-            .timeline p {
-                font-size: 1.6rem;
+            .timeline ul {
+                margin: 0 0 0 auto;
             }
             .timeline .date::before {
-                font-size: 1.4rem;
+                left: -20rem;
+            }
+            .timeline .date::after {
+                left: -5.9rem;
             }
             form {
                 width: 100%;
@@ -817,4 +918,3 @@
                 right: 2rem;
             }
         }
-        /*End media queries*/
