@@ -56,7 +56,7 @@
         </nav>
         <div class="landing-text">
             <h1>Victor Wu</h1>
-            <span class="txt-rotate" data-period="3000" data-rotate='[ "2A Computer Science Student @ uWaterloo", "Junior Full-Stack Developer", "Innovator", "Designer" ]'></span>
+            <span id="typed"></span>
         </div>
     </header>
 
@@ -79,56 +79,56 @@
                     <h1>About</h1>
                     <h6>Me</h6>
                 </div>
-                <p>Hey, my name is Victor! I am currently a second year student in the Computer Science program at the University of Waterloo. I love learning new skills, whether it is in a classroom or in my free time, and have experience with front-end
-                    and full-stack web development.</p>
-                <p>You can reach out to me with any way you want.</p>
-                <p>I look forward to getting in touch!</p>
+                <p>Hey, my name is <b>Victor</b>! I am currently a second year student in the Computer Science program at the <b>University of Waterloo</b>. I love learning new skills, whether it is in a classroom or in my free time, and have experience
+                    with front-end and full-stack web development.</p>
+                <p>I'm a huge fan of basketball and the NBA (We the NORTH 🦖)! My other hobbies include playing the violin, working out, gardening and playing video games.</p>
+                <p><b>Looking for Winter 2021 Internships!</b> You can reach out to me any way you want. I look forward to getting in touch!</p>
                 <div class="social-media">
                     <ul class="nav-list">
                         <li>
                             <a href="https://github.com/vicswu" class="icon-link" target="_blank">
-                                <i class="fab fa-github-square">
+                                <i class="fab fa-github-square" id="icon1">
                                 </i>
                             </a>
                         </li>
                         <li>
                             <a href="https://www.facebook.com/VictorWu167/" class="icon-link" target="_blank">
-                                <i class="fab fa-facebook-square">
+                                <i class="fab fa-facebook-square" id="icon2">
                                 </i>
                             </a>
                         </li>
                         <li>
                             <a href="https://www.linkedin.com/in/victor-s-wu/" class="icon-link" target="_blank">
-                                <i class="fab fa-linkedin">
+                                <i class="fab fa-linkedin" id="icon3">
                                 </i>
                             </a>
                         </li>
                         <li>
                             <a href="https://www.instagram.com/vic.s.wu/" class="icon-link" target="_blank">
-                                <i class="fab fa-instagram">
+                                <i class="fab fa-instagram" id="icon4">
                                 </i>
                             </a>
                         </li>
                     </ul>
                 </div>
-                <p class="phone"> <i class="fas fa-phone"></i> (438) 998-9670</p>
-                <p class="mail"> <i class="fas fa-envelope"></i> v27wu@uwaterloo.ca</p>
+                <p class="phone" id="phone"> <i class="fas fa-phone"></i> (438) 998-9670</p>
+                <p class="mail" id="mail"> <i class="fas fa-envelope"></i> v27wu@uwaterloo.ca</p>
             </div>
         </div>
     </section>
 
     <section class="services" id="skills">
-        <div class="container">
+        <div class="container-skill" id="container-skill">
             <div class="section-heading">
                 <h1 id="h1skills">Skills</h1>
             </div>
-            <h4>Languages</h4>
+            <h6 id="skill1">Languages</h6>
             <div class="my-skills">
                 <div class="skill" data-aos="fade-in" data-aos-delay="150">
                     <div class="icon-container" id="icon-container1">
                         <i class="fab fa-js-square"></i>
                     </div>
-                    <h5>Javascript</h5>
+                    <h6 id="skill2">Javascript</h6>
                     <p></p>
                 </div>
                 <div class="skill" data-aos="fade-in" data-aos-delay="300">
@@ -136,93 +136,93 @@
                         <i class="fab fa-html5"></i>
                         <i class="fab fa-css3-alt"></i>
                     </div>
-                    <h5>HTML / CSS</h5>
+                    <h6 id="skill3">HTML / CSS</h6>
                     <p></p>
                 </div>
                 <div class="skill" data-aos="fade-in" data-aos-delay="450">
                     <div class="icon-container" id="icon-container3">
                         <i class="fab fa-python"></i>
                     </div>
-                    <h5>Python</h5>
+                    <h6 id="skill4">Python</h6>
                     <p></p>
                 </div>
                 <div class="skill" data-aos="fade-in" data-aos-delay="600">
                     <div class="icon-container" id="icon-container4">
                         <i class="far fa-copyright"></i>
                     </div>
-                    <h5>C / C++</h5>
+                    <h6 id="skill5">C / C++</h6>
                     <p></p>
                 </div>
                 <div class="skill" data-aos="fade-in" data-aos-delay="750">
                     <div class="icon-container" id="icon-container5">
                         <i class="fas fa-database"></i>
                     </div>
-                    <h5>SQL</h5>
+                    <h6 id="skill6">SQL</h6>
                     <p></p>
                 </div>
             </div>
-            <h4>Frameworks</h4>
+            <h6 id="skill7">Frameworks</h6>
             <div class="my-skills">
                 <div class="skill" data-aos="fade-in" data-aos-delay="150">
                     <div class="icon-container" id="icon-container6">
                         <i class="fab fa-react"></i>
                     </div>
-                    <h5>React.js</h5>
+                    <h6 id="skill8">React.js</h6>
                     <p></p>
                 </div>
                 <div class="skill" data-aos="fade-in" data-aos-delay="300">
                     <div class="icon-container" id="icon-container7">
                         <i class="fas fa-cogs"></i>
                     </div>
-                    <h5>Express.js</h5>
+                    <h6 id="skill9">Express.js</h6>
                     <p></p>
                 </div>
                 <div class="skill" data-aos="fade-in" data-aos-delay="450">
                     <div class="icon-container" id="icon-container8">
                         <i class="fab fa-bootstrap"></i>
                     </div>
-                    <h5>Bootstrap</h5>
+                    <h6 id="skill10">Bootstrap</h6>
                     <p></p>
                 </div>
             </div>
-            <h4>Databases</h4>
+            <h6 id="skill11">Databases</h6>
             <div class="my-skills">
                 <div class="skill" data-aos="fade-in" data-aos-delay="150">
                     <div class="icon-container" id="icon-container9">
                         <i class="fab fa-mdb"></i>
                     </div>
-                    <h5>MongoDB</h5>
+                    <h6 id="skill12">MongoDB</h6>
                     <p></p>
                 </div>
                 <div class="skill" data-aos="fade-in" data-aos-delay="300">
                     <div class="icon-container" id="icon-container10">
                         <i class="fas fa-database"></i>
                     </div>
-                    <h5>MySQL</h5>
+                    <h6 id="skill13">MySQL</h6>
                     <p></p>
                 </div>
                 <div class="skill" data-aos="fade-in" data-aos-delay="450">
                     <div class="icon-container" id="icon-container11">
                         <i class="fas fa-fire-alt"></i>
                     </div>
-                    <h5>Firebase</h5>
+                    <h6 id="skill14">Firebase</h6>
                     <p></p>
                 </div>
             </div>
-            <h4>Technologies</h4>
+            <h6 id="skill15">Technologies</h6>
             <div class="my-skills">
                 <div class="skill" data-aos="fade-in" data-aos-delay="150">
                     <div class="icon-container" id="icon-container12">
                         <i class="fab fa-git-alt"></i>
                     </div>
-                    <h5>Git</h5>
+                    <h6 id="skill16">Git</h6>
                     <p></p>
                 </div>
                 <div class="skill" data-aos="fade-in" data-aos-delay="300">
                     <div class="icon-container" id="icon-container13">
                         <i class="fab fa-node-js"></i>
                     </div>
-                    <h5>Node.js</h5>
+                    <h6 id="skill17">Node.js</h6>
                     <p></p>
                 </div>
             </div>
@@ -520,7 +520,15 @@
         <p class="footer">Made using Javascript, CSS, HTML, Bootstrap, AOS and Font Awesome.</p>
         <p class="footer">Victor Wu &copy; 2020</p>
     </footer>
-
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
+    <script>
+        var typed = new Typed('#typed', {
+            strings: ["2A Computer Science Student @ uWaterloo^1000", "Junior Full-Stack Developer^1000", "Innovator^1000", "Problem Solver^1000", "Avid Basketball Fan^1000", "Foodie^1000"],
+            backSpeed: 40,
+            typeSpeed: 40,
+            loop: true
+        });
+    </script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="main.js"></script>

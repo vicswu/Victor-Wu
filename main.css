@@ -97,7 +97,7 @@
         .container h2 {
             text-transform: uppercase;
             letter-spacing: 2px;
-            opacity: 0.5;
+            opacity: 0.8;
         }
         
         .section-heading {
@@ -108,7 +108,7 @@
         .section-heading h1 {
             font-size: 3.5rem;
             color: black;
-            opacity: 0.5;
+            opacity: 1;
             text-transform: uppercase;
             font-weight: 300;
             position: relative;
@@ -360,7 +360,7 @@
             font-weight: 500;
             font-family: 'Titillium Web', sans-serif;
             font-size: 1.5rem;
-            background: #5c5c5c;
+            background: #fcfcfc;
             /* Black background color */
             position: fixed;
             /* Make it stick/fixed */
@@ -377,7 +377,7 @@
         #navbar a {
             float: right;
             display: block;
-            color: #fcfcfc;
+            color: #5c5c5c;
             text-align: center;
             padding: 15px;
             text-decoration: none;
@@ -385,8 +385,9 @@
         }
         
         #navbar a:hover {
-            background-color: #fcfcfc;
-            color: #00d2ff;
+            background-color: #5c5c5c;
+            transition: background-color 250ms;
+            color: #fcfcfc;
             z-index: 1500;
         }
         
@@ -445,12 +446,20 @@
             color: #5c5c5c;
         }
         
+        .fa-github-square.dark {
+            color: #fcfcfc;
+        }
+        
         .fa-github-square:hover {
             color: black;
         }
         
         .fa-facebook-square {
             color: #5c5c5c;
+        }
+        
+        .fa-facebook-square.dark {
+            color: #fcfcfc;
         }
         
         .fa-facebook-square:hover {
@@ -461,6 +470,10 @@
             color: #5c5c5c;
         }
         
+        .fa-linkedin.dark {
+            color: #fcfcfc;
+        }
+        
         .fa-linkedin:hover {
             color: #0072b1;
         }
@@ -469,12 +482,21 @@
             color: #5c5c5c;
         }
         
+        .fa-instagram.dark {
+            color: #fcfcfc;
+        }
+        
         .fa-instagram:hover {
             color: #f56040;
         }
         
         .phone {
             color: #5c5c5c;
+            transition: color 500ms;
+        }
+        
+        .phone.dark {
+            color: #fcfcfc;
             transition: color 500ms;
         }
         
@@ -488,6 +510,11 @@
             transition: color 500ms;
         }
         
+        .mail.dark {
+            color: #fcfcfc;
+            transition: color 500ms;
+        }
+        
         .mail:hover {
             color: #3F88C5;
             transition: color 500ms;
@@ -498,9 +525,17 @@
         .my-skills {
             margin-top: 5rem;
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(5rem, 1fr));
-            grid-gap: 2.5rem;
+            grid-template-columns: repeat(auto-fit, minmax(10rem, 20rem));
+            grid-gap: 0;
             text-align: center;
+        }
+        
+        .container-skill {
+            width: 80%;
+            max-width: 100rem;
+            height: 100%;
+            margin: 0 auto;
+            position: relative;
         }
         
         .skill {
@@ -508,10 +543,10 @@
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            padding: 2rem;
+            padding: 0;
         }
         
-        .skill h5 {
+        .container-skill h6 {
             text-transform: uppercase;
             letter-spacing: 2px;
             margin: 2rem -2px 2rem 0;
@@ -521,7 +556,11 @@
             position: relative;
         }
         
-        .container h4 {
+        .container-skill.dark h6 {
+            color: #fcfcfc;
+        }
+        
+        .skill h6 {
             text-transform: uppercase;
             letter-spacing: 2px;
             margin: 2rem -2px 2rem 0;
@@ -531,11 +570,15 @@
             position: relative;
         }
         
+        .skill.dark h6 {
+            color: #fcfcfc;
+        }
+        
         .icon-container {
-            width: 7.5rem;
-            height: 7.5rem;
-            border: 3px solid #5e5e5e;
-            background-color: #747474;
+            width: 5rem;
+            height: 5rem;
+            border-radius: 1rem;
+            background-color: black;
             margin-bottom: 2rem;
             display: flex;
             transform: rotate(45deg);
@@ -543,31 +586,47 @@
         }
         
         .icon-container:hover {
-            background-color: #3F88C5;
+            background-color: #FDC830;
             transition: background-color 500ms;
+            animation: pulse 1s infinite;
         }
         
         .icon-container.dark {
-            border: 3px solid #fcfcfc;
-            background-color: #747474;
+            background-color: #fcfcfc;
             transition: background-color 500ms;
         }
         
         .icon-container.dark:hover {
-            background-color: #3F88C5;
+            background-color: #FDC830;
             transition: background-color 500ms;
+            animation: pulse 1s infinite;
         }
         
         .icon-container i {
             color: #fcfcfc;
-            font-size: 4rem;
+            font-size: 2.5rem;
+            margin: auto;
+            transform: rotate(-45deg);
+        }
+        
+        .icon-container.dark i {
+            color: #292C35;
+            font-size: 2.5rem;
             margin: auto;
             transform: rotate(-45deg);
         }
         
         .icon-container i.fa-html5 {
             color: #fcfcfc;
-            font-size: 3rem;
+            font-size: 2rem;
+            margin-left: 7.5px;
+            margin-top: 20px;
+            transform: rotate(-45deg);
+        }
+        
+        .icon-container.dark i.fa-html5 {
+            color: black;
+            font-size: 2rem;
             margin-left: 7.5px;
             margin-top: 20px;
             transform: rotate(-45deg);
@@ -575,7 +634,14 @@
         
         .icon-container i.fa-css3-alt {
             color: #fcfcfc;
-            font-size: 3rem;
+            font-size: 2rem;
+            margin: auto;
+            transform: rotate(-45deg);
+        }
+        
+        .icon-container.dark i.fa-css3-alt {
+            color: black;
+            font-size: 2rem;
             margin: auto;
             transform: rotate(-45deg);
         }
@@ -609,7 +675,7 @@
             font-size: 1.5rem;
             text-transform: uppercase;
             font-weight: 300;
-            opacity: .5;
+            opacity: .8;
         }
         
         .portfolio-description h1 {
@@ -655,7 +721,7 @@
             text-transform: uppercase;
             font-weight: 300;
             margin-bottom: 1rem;
-            opacity: 0.3;
+            opacity: 0.5;
         }
         
         .timeline .date {
@@ -716,10 +782,9 @@
             position: absolute;
             height: 5rem;
             width: 5rem;
-            background-color: #fcfcfc;
+            background-color: #fdfdfd;
             top: -2.5rem;
             border-radius: 100%;
-            border: 1px solid black;
             right: 5rem;
             display: flex;
             animation: pulse 2s infinite;
@@ -736,7 +801,7 @@
         
         @keyframes pulse {
             0% {
-                box-shadow: 0 0 0 0 rgba(255, 127, 80, 0.99);
+                box-shadow: 0 0 0 0 #FDC830;
             }
             70% {
                 box-shadow: 0 0 0 2rem rgba(255, 127, 80, 0);
@@ -816,8 +881,7 @@
             .landing-text h1 {
                 font-size: 5rem;
             }
-            span {
-                margin: 0.4em 0 10em 0;
+            #typed {
                 font-size: 1em;
                 z-index: 100;
             }
@@ -843,7 +907,7 @@
                 font-weight: 500;
                 font-family: 'Titillium Web', sans-serif;
                 font-size: 1.2rem;
-                background: #808080;
+                background: #fcfcfc;
                 /* Black background color */
                 position: fixed;
                 /* Make it stick/fixed */
@@ -859,15 +923,15 @@
             #navbar a {
                 float: right;
                 display: block;
-                color: white;
+                color: 5c5c5c;
                 text-align: center;
                 padding: 10px;
                 text-decoration: none;
                 z-index: 1500;
             }
             #navbar a:hover {
-                background-color: #fffff0;
-                color: #00d2ff;
+                background-color: #5c5c5c;
+                color: #fcfcfc;
                 z-index: 1500;
             }
             .nav-list {
