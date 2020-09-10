@@ -442,7 +442,7 @@
         }
         
         .fa-github-square {
-            color: grey;
+            color: #5c5c5c;
         }
         
         .fa-github-square:hover {
@@ -450,7 +450,7 @@
         }
         
         .fa-facebook-square {
-            color: grey;
+            color: #5c5c5c;
         }
         
         .fa-facebook-square:hover {
@@ -458,7 +458,7 @@
         }
         
         .fa-linkedin {
-            color: grey;
+            color: #5c5c5c;
         }
         
         .fa-linkedin:hover {
@@ -466,7 +466,7 @@
         }
         
         .fa-instagram {
-            color: grey;
+            color: #5c5c5c;
         }
         
         .fa-instagram:hover {
@@ -474,19 +474,23 @@
         }
         
         .phone {
-            color: grey;
+            color: #5c5c5c;
+            transition: color 500ms;
         }
         
         .phone:hover {
             color: #3F88C5;
+            transition: color 500ms;
         }
         
         .mail {
-            color: grey;
+            color: #5c5c5c;
+            transition: color 500ms;
         }
         
         .mail:hover {
             color: #3F88C5;
+            transition: color 500ms;
         }
         /*End about*/
         /*Start services*/
@@ -535,11 +539,23 @@
             margin-bottom: 2rem;
             display: flex;
             transform: rotate(45deg);
+            transition: background-color 500ms;
+        }
+        
+        .icon-container:hover {
+            background-color: #3F88C5;
+            transition: background-color 500ms;
         }
         
         .icon-container.dark {
             border: 3px solid #fcfcfc;
             background-color: #747474;
+            transition: background-color 500ms;
+        }
+        
+        .icon-container.dark:hover {
+            background-color: #3F88C5;
+            transition: background-color 500ms;
         }
         
         .icon-container i {
