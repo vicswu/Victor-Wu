@@ -8,7 +8,7 @@
         
         #html {
             font-size: 10px;
-            font-family: 'Titillium Web', sans-serif;
+            font-family: 'Montserrat', sans-serif;
             color: black;
             background-color: white;
         }
@@ -71,7 +71,7 @@
             color: #433A3F;
             font-weight: 200;
             margin: 0.4em 0;
-            font-size: 1.8em;
+            font-size: 2rem;
             z-index: 100;
         }
         
@@ -257,8 +257,8 @@
         }
         
         .nav-link {
-            font-family: 'Titillium Web', sans-serif;
-            font-size: 5rem;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 3rem;
             padding: 1rem;
             color: black;
         }
@@ -340,8 +340,8 @@
         }
         
         .landing-text h1 {
-            font-size: 10rem;
-            font-family: 'Titillium Web', sans-serif;
+            font-size: 7rem;
+            font-family: 'Montserrat', sans-serif;
             padding: 1rem;
             user-select: none;
             color: #433A3F;
@@ -350,7 +350,7 @@
         .landing-text h6 {
             font-size: 2.5rem;
             font-weight: 300;
-            font-family: 'Titillium Web', sans-serif;
+            font-family: 'Montserrat', sans-serif;
             color: #433A3F;
         }
         /*End header*/
@@ -358,9 +358,9 @@
         
         #navbar {
             font-weight: 500;
-            font-family: 'Titillium Web', sans-serif;
+            font-family: 'Montserrat', sans-serif;
             font-size: 1.5rem;
-            background: #fcfcfc;
+            background: transparent;
             /* Black background color */
             position: fixed;
             /* Make it stick/fixed */
@@ -377,7 +377,7 @@
         #navbar a {
             float: right;
             display: block;
-            color: #5c5c5c;
+            color: black;
             text-align: center;
             padding: 15px;
             text-decoration: none;
@@ -905,9 +905,9 @@
             }
             #navbar {
                 font-weight: 500;
-                font-family: 'Titillium Web', sans-serif;
+                font-family: 'Montserrat', sans-serif;
                 font-size: 1.2rem;
-                background: #fcfcfc;
+                background: transparent;
                 /* Black background color */
                 position: fixed;
                 /* Make it stick/fixed */
