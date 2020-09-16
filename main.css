@@ -356,7 +356,7 @@
         /*End header*/
         /*Start about*/
         
-        #navbar {
+        .navbar {
             font-weight: 500;
             font-family: 'Montserrat', sans-serif;
             font-size: 1.5rem;
@@ -374,7 +374,7 @@
         }
         /* Style the navbar links */
         
-        #navbar a {
+        .navbar a {
             float: right;
             display: block;
             color: black;
@@ -384,11 +384,13 @@
             z-index: 1500;
         }
         
-        #navbar a:hover {
-            background-color: #5c5c5c;
-            transition: background-color 250ms;
+        .navbar.dark a {
             color: #fcfcfc;
-            z-index: 1500;
+        }
+        
+        .navbar a:hover {
+            background-color: #fcfcfc;
+            color: #5c5c5c;
         }
         
         .about .container {
@@ -516,6 +518,32 @@
         }
         
         .mail:hover {
+            color: #3F88C5;
+            transition: color 500ms;
+        }
+        
+        .resume {
+            color: #5c5c5c;
+            transition: color 500ms;
+            font-size: 2rem;
+        }
+        
+        .resume.dark {
+            color: #fcfcfc;
+            transition: color 500ms;
+        }
+        
+        .resume.dark a {
+            color: #fcfcfc;
+            transition: color 500ms;
+        }
+        
+        .resume:hover {
+            color: #3F88C5;
+            transition: color 500ms;
+        }
+        
+        .resume a:hover {
             color: #3F88C5;
             transition: color 500ms;
         }
@@ -903,7 +931,7 @@
                 width: 50px;
                 transform: scale(1.5);
             }
-            #navbar {
+            .navbar {
                 font-weight: 500;
                 font-family: 'Montserrat', sans-serif;
                 font-size: 0.8rem;
@@ -920,7 +948,7 @@
                 z-index: 1000;
             }
             /* Style the navbar links */
-            #navbar a {
+            .navbar a {
                 float: right;
                 display: block;
                 color: 5c5c5c;
@@ -929,7 +957,7 @@
                 text-decoration: none;
                 z-index: 1500;
             }
-            #navbar a:hover {
+            .navbar a:hover {
                 background-color: #5c5c5c;
                 color: #fcfcfc;
                 z-index: 1500;

@@ -43,6 +43,7 @@ const chk = document.getElementById('chk');
 chk.addEventListener('change', () => {
     document.body.classList.toggle('dark');
     document.getElementById("html").classList.toggle('dark');
+    document.getElementById("navbar").classList.toggle('dark');
     document.getElementById("icon-container1").classList.toggle('dark');
     document.getElementById("icon-container2").classList.toggle('dark');
     document.getElementById("icon-container3").classList.toggle('dark');
@@ -62,6 +63,7 @@ chk.addEventListener('change', () => {
     document.getElementById("icon4").classList.toggle('dark');
     document.getElementById("phone").classList.toggle('dark');
     document.getElementById("mail").classList.toggle('dark');
+    document.getElementById("resume").classList.toggle('dark');
     document.getElementById("h1skills").classList.toggle('dark');
     document.getElementById("h1portfolio").classList.toggle('dark');
     document.getElementById("h1experience").classList.toggle('dark');
