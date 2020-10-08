@@ -70,3 +70,15 @@ chk.addEventListener('change', () => {
     document.getElementById("h1education").classList.toggle('dark');
     document.getElementById("container-skill").classList.toggle('dark');
 });
+
+const countEl = document.getElementById('count');
+
+updateVisitCount();
+
+function updateVisitCount() {
+	fetch('https://api.countapi.xyz/update/vicswu/website/?amount=1')
+	.then(res => res.json())
+	.then(res => {
+		countEl.innerHTML = res.value;
+	})
+}

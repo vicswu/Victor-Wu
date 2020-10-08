@@ -267,6 +267,7 @@
         .nav-link:focus {
             background: linear-gradient(#FDC830, #F37335);
             -webkit-background-clip: text;
+            background-clip: text;
             -webkit-text-fill-color: transparent;
         }
         
@@ -791,6 +792,14 @@
             background-color: #fcfcfc;
         }
         /*End timeline*/
+        /*Start counter*/
+        
+        .counter {
+            width: 100%;
+            text-align: center;
+            margin-bottom: 4rem;
+        }
+        /*End counter*/
         /*Start footer*/
         
         .copyright {
