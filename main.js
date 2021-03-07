@@ -64,6 +64,7 @@ chk.addEventListener('change', () => {
     document.getElementById("phone").classList.toggle('dark');
     document.getElementById("mail").classList.toggle('dark');
     document.getElementById("resume").classList.toggle('dark');
+    document.getElementById("resume-link").classList.toggle('dark');
     document.getElementById("h1skills").classList.toggle('dark');
     document.getElementById("h1portfolio").classList.toggle('dark');
     document.getElementById("h1experience").classList.toggle('dark');

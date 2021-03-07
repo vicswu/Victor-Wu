@@ -361,19 +361,13 @@
             font-weight: 500;
             font-family: 'Montserrat', sans-serif;
             font-size: 1.5rem;
-            background: transparent;
-            /* Black background color */
+            background: #fcfcfc;
             position: fixed;
-            /* Make it stick/fixed */
             top: -50px;
-            /* Hide the navbar 50 px outside of the top view */
             width: 100%;
-            /* Full width */
             transition: top 0.3s;
-            /* Transition effect when sliding down (and up) */
             z-index: 1000;
         }
-        /* Style the navbar links */
         
         .navbar a {
             float: right;
@@ -383,15 +377,22 @@
             padding: 15px;
             text-decoration: none;
             z-index: 1500;
+            transition: background-color 500ms;
         }
         
         .navbar.dark a {
             color: #fcfcfc;
         }
         
-        .navbar a:hover {
-            background-color: #fcfcfc;
+        .navbar.dark a:hover {
             color: #5c5c5c;
+            background-color: #fcfcfc;
+        }
+        
+        .navbar a:hover {
+            background-color: #5c5c5c;
+            color: #fcfcfc;
+            transition: background-color 500ms;
         }
         
         .about .container {
@@ -511,6 +512,7 @@
         .mail {
             color: #5c5c5c;
             transition: color 500ms;
+            cursor: default;
         }
         
         .mail.dark {
@@ -534,7 +536,13 @@
             transition: color 500ms;
         }
         
-        .resume.dark a {
+        .resume-link {
+            color: #5c5c5c;
+            transition: color 500ms;
+            font-size: 2rem;
+        }
+        
+        .resume-link.dark {
             color: #fcfcfc;
             transition: color 500ms;
         }
@@ -544,7 +552,7 @@
             transition: color 500ms;
         }
         
-        .resume a:hover {
+        .resume-link:hover {
             color: #3F88C5;
             transition: color 500ms;
         }
@@ -565,6 +573,11 @@
             height: 100%;
             margin: 0 auto;
             position: relative;
+        }
+        
+        .h1skills.dark {
+            color: #fcfcfc;
+            transition: color 500ms;
         }
         
         .skill {
@@ -824,8 +837,12 @@
             border-radius: 100%;
             right: 5rem;
             display: flex;
-            animation: pulse 2s infinite;
             cursor: pointer;
+            border: 3px solid black
+        }
+        
+        .up:hover {
+            animation: pulse 2s infinite;
         }
         
         .up i {
@@ -944,23 +961,17 @@
                 font-weight: 500;
                 font-family: 'Montserrat', sans-serif;
                 font-size: 0.8rem;
-                background: transparent;
-                /* Black background color */
+                background-color: #fcfcfc;
                 position: fixed;
-                /* Make it stick/fixed */
                 top: -50px;
-                /* Hide the navbar 50 px outside of the top view */
                 width: 100%;
-                /* Full width */
                 transition: top 0.3s;
-                /* Transition effect when sliding down (and up) */
                 z-index: 1000;
             }
-            /* Style the navbar links */
             .navbar a {
                 float: right;
                 display: block;
-                color: 5c5c5c;
+                color: black;
                 text-align: center;
                 padding: 10px;
                 text-decoration: none;

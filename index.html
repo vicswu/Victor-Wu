@@ -19,14 +19,6 @@
 
 <body>
     <header>
-        <div>
-            <input type="checkbox" class="checkbox" id="chk" />
-            <label class="label" for="chk">
-                <i class="fas fa-moon"></i>
-                <i class="fas fa-sun"></i>
-                <div class="ball"></div>
-            </label>
-        </div>
         <div class="menu-toggler">
             <div class="bar half start"></div>
             <div class="bar"></div>
@@ -47,10 +39,10 @@
                     <a href="#portfolio" class="nav-link">PORTFOLIO</a>
                 </li>
                 <li>
-                    <a href="#education" class="nav-link">EDUCATION</a>
+                    <a href="#experience" class="nav-link">EXPERIENCE</a>
                 </li>
                 <li>
-                    <a href="#experience" class="nav-link">EXPERIENCE</a>
+                    <a href="#education" class="nav-link">EDUCATION</a>
                 </li>
             </ul>
         </nav>
@@ -61,8 +53,8 @@
     </header>
 
     <nav class="navbar" id="navbar">
-        <a class="link" href="#experience">EXPERIENCE</a>
         <a class="link" href="#education">EDUCATION</a>
+        <a class="link" href="#experience">EXPERIENCE</a>
         <a class="link" href="#portfolio">PORTFOLIO</a>
         <a class="link" href="#skills">SKILLS</a>
         <a class="link" href="#about">ABOUT</a>
@@ -71,6 +63,14 @@
 
     <section class="about" id="about">
         <div class="container">
+            <div>
+                <input type="checkbox" class="checkbox" id="chk" />
+                <label class="label" for="chk">
+                    <i class="fas fa-moon"></i>
+                    <i class="fas fa-sun"></i>
+                    <div class="ball"></div>
+                </label>
+            </div>
             <div class="profile-img" data-aos="fade-right" data-aos-delay="150">
                 <img draggable="false" src="images/profile.png" alt="" style="z-index: 1">
             </div>
@@ -79,10 +79,10 @@
                     <h1>About</h1>
                     <h6>Me</h6>
                 </div>
-                <p>Hey, my name is <b>Victor</b>! I am currently a second year student in the Computer Science program at the <b>University of Waterloo</b>. I love learning new skills, whether it is in a classroom or in my free time, and have experience
-                    with front-end and full-stack web development.</p>
+                <p>Hey, my name is <b>Victor</b>! I am currently a third year student in the Computer Science program at the <b>University of Waterloo</b>. I love learning new skills, whether it is in a classroom or in my free time, and have experience with
+                    front-end and full-stack web development.</p>
                 <p>I'm a huge fan of basketball and the NBA (We the NORTH 🦖)! My other hobbies include playing the violin, working out, gardening and playing video games.</p>
-                <p><b>Looking for Winter 2021 Internships!</b> You can reach out to me any way you want. I look forward to getting in touch!</p>
+                <!-- <p><b>Looking for Winter 2021 Internships!</b> You can reach out to me any way you want. I look forward to getting in touch!</p> -->
                 <div class="social-media">
                     <ul class="nav-list">
                         <li>
@@ -111,9 +111,9 @@
                         </li>
                     </ul>
                 </div>
-                <p class="phone" id="phone"> <i class="fas fa-phone"></i> (438) 998-9670</p>
+                <!-- <p class="phone" id="phone"> <i class="fas fa-phone"></i> (438) 998-9670</p> -->
                 <p class="mail" id="mail"> <i class="fas fa-envelope"></i> v27wu@uwaterloo.ca</p>
-                <p class="resume" id="resume"> <i class="fas fa-file-pdf"></i></i> <a style="text-decoration: none;" href="resume.pdf" target="blank">Check out my resume!</a> </p>
+                <p class="resume" id="resume"> <i class="fas fa-file-pdf"></i></i> <a class="resume-link" id="resume-link" style="text-decoration: none;" href="resume.pdf" target="blank">Check out my resume!</a> </p>
             </div>
         </div>
     </section>
@@ -121,7 +121,7 @@
     <section class="services" id="skills">
         <div class="container-skill" id="container-skill">
             <div class="section-heading">
-                <h1 id="h1skills">Skills</h1>
+                <h1 id="h1skills" class="h1skills">Skills</h1>
             </div>
             <h6 id="skill1">Languages</h6>
             <div class="my-skills">
@@ -467,7 +467,35 @@
         </div>
     </section>
 
-    <section class="experience" id="education">
+    <section class="experience" id="experience">
+        <div class="container">
+            <div class="section-heading">
+                <h1 id="h1experience">Work Experience</h1>
+            </div>
+            <div class="timeline" data-aos="fade-down" data-aos-delay="150">
+                <ul>
+                    <li class="date" data-date="2021 - Present">
+                        <h1>Honeybee</h1>
+                        <p>Full-stack Web Developer</p>
+                    </li>
+                    <li class="date" data-date="2020 - 2021">
+                        <h1>Apptitude inc.</h1>
+                        <p>Full-stack Web Developer</p>
+                    </li>
+                    <li class="date" data-date="2018 - 2019">
+                        <h1>Royal Montreal Golf Club</h1>
+                        <p>Lifeguard</p>
+                    </li>
+                    <li class="date" data-date="2018 - 2018">
+                        <h1>Helvetica inc.</h1>
+                        <p>Junior Front-end Web Developer</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section class="education" id="education">
         <div class="container">
             <div class="section-heading">
                 <h1 id="h1education">Education</h1>
@@ -491,35 +519,11 @@
         </div>
     </section>
 
-    <section class="experience" id="experience">
-        <div class="container">
-            <div class="section-heading">
-                <h1 id="h1experience">Work Experience</h1>
-            </div>
-            <div class="timeline" data-aos="fade-down" data-aos-delay="150">
-                <ul>
-                    <li class="date" data-date="2020 - Present">
-                        <h1>Apptitude inc.</h1>
-                        <p>Full-stack Web Developer</p>
-                    </li>
-                    <li class="date" data-date="2018 - 2019">
-                        <h1>Royal Montreal Golf Club</h1>
-                        <p>Lifeguard</p>
-                    </li>
-                    <li class="date" data-date="2018 - 2018">
-                        <h1>Helvetica inc.</h1>
-                        <p>Junior Front-end Web Developer</p>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </section>
-
-    <div class="counter">
+    <!--<div class="counter">
         <p>This page was viewed</p>
         <h1 id="count">0</h1>
         <p>times!</p>
-    </div>
+    </div>-->
 
     <footer class="copyright">
         <div class="up" id="up">
@@ -531,7 +535,7 @@
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
     <script>
         var typed = new Typed('#typed', {
-            strings: ["2A COMPUTER SCIENCE STUDENT @ uWaterloo^1000", "JUNIOR FULL-STACK DEVELOPER^1000", "INNOVATOR^1000", "PROBLEM SOLVER^1000", "AVID BASKETBALL FAN^1000", "FOODIE^1000"],
+            strings: ["3B COMPUTER SCIENCE STUDENT @ uWaterloo^1000", "JUNIOR FULL-STACK DEVELOPER^1000", "INNOVATOR^1000", "PROBLEM SOLVER^1000", "AVID BASKETBALL FAN^1000", "FOODIE^1000"],
             backSpeed: 40,
             typeSpeed: 40,
             loop: true
