@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>VICTOR WU</title>
+    <title>Victor Wu</title>
     <link rel="shortcut icon" type="image/png" href="images/V.png">
     <link href="https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
@@ -50,6 +50,9 @@
             <h1>VICTOR WU</h1>
             <span id="typed"></span>
         </div>
+        <div class="down">
+            <a class="down-icon" href="#about"><i class="fas fa-chevron-down"></i></a>
+        </div>
     </header>
 
     <nav class="navbar" id="navbar">
@@ -63,16 +66,16 @@
 
     <section class="about" id="about">
         <div class="container">
-            <div>
+            <!-- <div>
                 <input type="checkbox" class="checkbox" id="chk" />
                 <label class="label" for="chk">
                     <i class="fas fa-moon"></i>
                     <i class="fas fa-sun"></i>
                     <div class="ball"></div>
                 </label>
-            </div>
+            </div> -->
             <div class="profile-img" data-aos="fade-right" data-aos-delay="150">
-                <img draggable="false" src="images/profile.png" alt="" style="z-index: 1">
+                <img draggable="false" src="images/profile2.png" alt="profile" style="z-index: 1">
             </div>
             <div class="about-details" data-aos="fade-left" data-aos-delay="300">
                 <div class="about-heading">
@@ -82,7 +85,7 @@
                 <p>Hey, my name is <b>Victor</b>! I am currently a third year student in the Computer Science program at the <b>University of Waterloo</b>. I love learning new skills, whether it is in a classroom or in my free time, and have experience with
                     front-end and full-stack web development.</p>
                 <p>I'm a huge fan of basketball and the NBA (We the NORTH 🦖)! My other hobbies include playing the violin, working out, gardening and playing video games.</p>
-                <!-- <p><b>Looking for Winter 2021 Internships!</b> You can reach out to me any way you want. I look forward to getting in touch!</p> -->
+                <p><b>Looking for Fall 2021 Software Development Internships!</b> You can reach out to me any way you want. I look forward to getting in touch!</p>
                 <div class="social-media">
                     <ul class="nav-list">
                         <li>
@@ -91,29 +94,35 @@
                                 </i>
                             </a>
                         </li>
-                        <li>
+                        <!-- <li>
                             <a href="https://www.facebook.com/VictorWu167/" class="icon-link" target="_blank">
                                 <i class="fab fa-facebook-square" id="icon2">
                                 </i>
                             </a>
-                        </li>
+                        </li> -->
                         <li>
                             <a href="https://www.linkedin.com/in/victor-s-wu/" class="icon-link" target="_blank">
                                 <i class="fab fa-linkedin" id="icon3">
                                 </i>
                             </a>
                         </li>
-                        <li>
+                        <!-- <li>
                             <a href="https://www.instagram.com/vic.s.wu/" class="icon-link" target="_blank">
                                 <i class="fab fa-instagram" id="icon4">
                                 </i>
                             </a>
-                        </li>
+                        </li> -->
                     </ul>
                 </div>
                 <!-- <p class="phone" id="phone"> <i class="fas fa-phone"></i> (438) 998-9670</p> -->
-                <p class="mail" id="mail"> <i class="fas fa-envelope"></i> v27wu@uwaterloo.ca</p>
-                <p class="resume" id="resume"> <i class="fas fa-file-pdf"></i></i> <a class="resume-link" id="resume-link" style="text-decoration: none;" href="resume.pdf" target="blank">Check out my resume!</a> </p>
+                <div class="buttons">
+                    <button class="button">
+                        <p class="mail" id="mail"> <a class="resume-link" id="resume-link" href="mailto: v27wu@uwaterloo.ca" style="text-decoration: none;"> <i class="fas fa-envelope"></i> v27wu@uwaterloo.ca </a></p>
+                    </button>
+                    <button class="button">
+                        <p class="resume" id="resume"> <a class="resume-link" id="resume-link" style="text-decoration: none;" href="resume.pdf" target="blank"><i class="fas fa-file-pdf"></i></i> Check out my resume!</a> </p>
+                    </button>
+                </div>
             </div>
         </div>
     </section>
@@ -185,25 +194,32 @@
                     <h6 id="skill10">Bootstrap</h6>
                     <p></p>
                 </div>
+                <div class="skill" data-aos="fade-in" data-aos-delay="450">
+                    <div class="icon-container" id="icon-container9">
+                        <img class="next-js" src="images/next-js.png" alt="next logo">
+                    </div>
+                    <h6 id="skill10">Next.js</h6>
+                    <p></p>
+                </div>
             </div>
             <h6 id="skill11">Databases</h6>
             <div class="my-skills">
                 <div class="skill" data-aos="fade-in" data-aos-delay="150">
-                    <div class="icon-container" id="icon-container9">
+                    <div class="icon-container" id="icon-container10">
                         <i class="fab fa-mdb"></i>
                     </div>
                     <h6 id="skill12">MongoDB</h6>
                     <p></p>
                 </div>
                 <div class="skill" data-aos="fade-in" data-aos-delay="300">
-                    <div class="icon-container" id="icon-container10">
+                    <div class="icon-container" id="icon-container11">
                         <i class="fas fa-database"></i>
                     </div>
                     <h6 id="skill13">MySQL</h6>
                     <p></p>
                 </div>
                 <div class="skill" data-aos="fade-in" data-aos-delay="450">
-                    <div class="icon-container" id="icon-container11">
+                    <div class="icon-container" id="icon-container12">
                         <i class="fas fa-fire-alt"></i>
                     </div>
                     <h6 id="skill14">Firebase</h6>
@@ -213,14 +229,14 @@
             <h6 id="skill15">Technologies</h6>
             <div class="my-skills">
                 <div class="skill" data-aos="fade-in" data-aos-delay="150">
-                    <div class="icon-container" id="icon-container12">
+                    <div class="icon-container" id="icon-container13">
                         <i class="fab fa-git-alt"></i>
                     </div>
                     <h6 id="skill16">Git</h6>
                     <p></p>
                 </div>
                 <div class="skill" data-aos="fade-in" data-aos-delay="300">
-                    <div class="icon-container" id="icon-container13">
+                    <div class="icon-container" id="icon-container14">
                         <i class="fab fa-node-js"></i>
                     </div>
                     <h6 id="skill17">Node.js</h6>
@@ -475,20 +491,24 @@
             <div class="timeline" data-aos="fade-down" data-aos-delay="150">
                 <ul>
                     <li class="date" data-date="2021 - Present">
-                        <h1>Honeybee</h1>
+                        <h1><a href="https://www.honeybeehub.io" target="_blank">Honeybee</a></h1>
                         <p>Full-stack Web Developer</p>
+                        <p class="mobile-date">2021 - Present</p>
                     </li>
                     <li class="date" data-date="2020 - 2021">
                         <h1>Apptitude inc.</h1>
                         <p>Full-stack Web Developer</p>
+                        <p class="mobile-date">2020 - 2021</p>
                     </li>
                     <li class="date" data-date="2018 - 2019">
                         <h1>Royal Montreal Golf Club</h1>
                         <p>Lifeguard</p>
+                        <p class="mobile-date">2018 - 2019</p>
                     </li>
                     <li class="date" data-date="2018 - 2018">
                         <h1>Helvetica inc.</h1>
                         <p>Junior Front-end Web Developer</p>
+                        <p class="mobile-date">2018 - 2018</p>
                     </li>
                 </ul>
             </div>
@@ -503,16 +523,19 @@
             <div class="timeline" data-aos="fade-down" data-aos-delay="150">
                 <ul>
                     <li class="date" data-date="2019 - Present">
-                        <h1>University of Waterloo</h1>
+                        <h1><a href="https://cs.uwaterloo.ca/" target="_blank">University of Waterloo</a></h1>
                         <p>Candidate for Bachelor of Computer Science</p>
+                        <p class="mobile-date">2019 - Present</p>
                     </li>
                     <li class="date" data-date="2017 - 2019">
-                        <h1>Marianopolis College</h1>
+                        <h1><a href="https://www.marianopolis.edu/" target="_blank">Marianopolis College</a></h1>
                         <p>Received DEC in Honours Health Science</p>
+                        <p class="mobile-date">2017-2019</p>
                     </li>
                     <li class="date" data-date="2012 - 2017">
                         <h1>International Baccalaureate Diploma</h1>
                         <p>High school diploma obtained after 5 years of IB program and Personal Project</p>
+                        <p class="mobile-date">2012-2017</p>
                     </li>
                 </ul>
             </div>
@@ -535,7 +558,7 @@
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
     <script>
         var typed = new Typed('#typed', {
-            strings: ["3B COMPUTER SCIENCE STUDENT @ uWaterloo^1000", "JUNIOR FULL-STACK DEVELOPER^1000", "INNOVATOR^1000", "PROBLEM SOLVER^1000", "AVID BASKETBALL FAN^1000", "FOODIE^1000"],
+            strings: ["3B COMPUTER SCIENCE STUDENT @ uWaterloo^1000", "SOFTWARE DEVELOPER INTERN^1000", "INNOVATOR^1000", "PROBLEM SOLVER^1000", "AVID BASKETBALL FAN^1000", "FOODIE^1000", "ANIMAL LOVER^1000"],
             backSpeed: 40,
             typeSpeed: 40,
             loop: true
@@ -545,5 +568,4 @@
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="main.js"></script>
 </body>
-
 </html>
